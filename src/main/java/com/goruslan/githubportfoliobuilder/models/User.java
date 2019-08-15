@@ -33,4 +33,8 @@ public class User {
     private List<Role> roles;
 
 
+    public void addRole(Role role) {
+        roles.add(role);
+    }
+
 }

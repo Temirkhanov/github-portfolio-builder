@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html
+		lang="en"
+		xmlns:th="http://www.thymeleaf.org"
+		xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+>
+<head th:replace="~{layout :: head(title = 'Portfolio')}">
+</head>
+
+<body>
+
+<nav th:replace="~{layout :: nav}"  style="z-index: 9999;"></nav>
+
+<main class="page projets-page">
+	<section class="portfolio-block project-no-images">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-sm-6 col-md-4 col-lg-3" style="margin-bottom: 15px;">
+					<div class="card border rounded-0 shadow-sm clean-card text-center">
+						<div id="grid-pic" style="background-image: url(https://avatars0.githubusercontent.com/u/18630847?s=460&amp;v=4);height: 150px;background-size: cover;"></div>
+						<div class="card-body info" style="padding-bottom: 15px;">
+							<h4 class="card-title">John Smith</h4>
+							<p class="text-center text-secondary card-text">Full-Stack Web Developer, AI Software Engineer.</p><a class="btn btn-light btn-sm border rounded-0 shadow-sm" role="button" style="font-size: 15px;">View</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+<script src="assets/js/theme.js"></script>
+</body>
+
+</html>

@@ -18,7 +18,7 @@ public class Project{
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column(nullable = false)
+    @NonNull
     private String name;
 
     private String language;

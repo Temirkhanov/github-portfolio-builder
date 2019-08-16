@@ -1,7 +1,6 @@
 package com.goruslan.githubportfoliobuilder.models;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -11,6 +10,8 @@ import java.util.Collection;
 
 @Getter
 @Setter
+@RequiredArgsConstructor
+@NoArgsConstructor
 @Entity
 public class Role {
 
@@ -18,11 +19,12 @@ public class Role {
     @GeneratedValue
     private long id;
 
-    String name;
+    @NonNull
+    private String name;
 
-    public Role(String name) {
-        this.name = name;
-    }
+//    public Role(String name) {
+//        this.name = name;
+//    }
 
     @ManyToMany( mappedBy = "roles")
     private Collection<User> users;

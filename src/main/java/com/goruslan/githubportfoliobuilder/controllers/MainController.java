@@ -22,8 +22,7 @@ public class MainController {
 
     @GetMapping("/")
     public String geeks(Model model) {
-
-        
+        model.addAttribute("users", userService.findAll());
         return "geeks";
     }
 
